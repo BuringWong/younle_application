@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/title_all"
+        layout="@layout/titlebar_upgrade" />
+    <TextView
+        android:id="@+id/tv_notice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择该打印机负责打印的分组"
+        android:textColor="#333"
+        android:textSize="24px"
+        android:layout_below="@id/title_all"
+        android:gravity="center"
+        android:layout_marginTop="30px"
+        />
+    <TextView
+        android:id="@+id/tv_notice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择后,该打印机的预结单商家联和小程序点单小票的商家联只打印该分组的商品"
+        android:textColor="#666"
+        android:textSize="20px"
+        android:layout_below="@id/tv_notice1"
+        android:gravity="center"
+        android:layout_marginTop="30px"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        />
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_below="@id/et_newname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginBottom="50px"
+        android:text="确定"
+        android:textSize="24px"
+        android:textColor="#fff"
+        android:background="@drawable/start_pay_selector"
+        android:layout_alignParentBottom="true"/>
+
+    <ListView
+        android:layout_above="@id/btn_sure"
+        android:layout_marginTop="30px"
+        android:divider="@null"
+        android:layout_below="@id/tv_notice2"
+        android:id="@+id/lv_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_notice2"
+        layout="@layout/jiazai_layout"
+        android:layout_above="@id/btn_sure"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

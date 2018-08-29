@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/order_item_selector"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="订单A1"
+            android:textColor="#292929"
+            android:textSize="15sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/order_room_shape">
+            <TextView
+                android:id="@+id/tv_room_consume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:layout_centerInParent="true"
+                android:text="房间106" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/order_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/order_name"
+            android:text="￥345"
+            android:textColor="#292929"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_pay_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/order_account"
+            android:layout_marginRight="80dp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/order_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="含3件商品"
+            android:textColor="#9f9f9f"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:34:54"
+            android:textColor="#9f9f9f"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_from_which_tools"
+            android:layout_toLeftOf="@id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="#9f9f9f"
+            android:layout_alignParentBottom="true"
+            android:text="来自收银机"/>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_remark_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp"
+        android:background="#f6f6f6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="备注："
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="111111111"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f2f2f2"
+        android:layout_marginLeft="10dp"/>
+</com.zhy.autolayout.AutoLinearLayout>

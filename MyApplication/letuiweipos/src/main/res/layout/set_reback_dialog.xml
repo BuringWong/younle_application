@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="请填写退款金额"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="最多可退"
+            android:textColor="#999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_max_money"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#bbff0000"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_new_price"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            android:background="@drawable/change_price"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:maxLength="9"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:hint="￥0.00"
+            android:textColorHint="#333"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="元"
+            android:textSize="15sp"
+            android:textColor="#999999"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/change_price">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textColor="#333"
+            android:textSize="15sp"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/change_money"></View>
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#3f88cd"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

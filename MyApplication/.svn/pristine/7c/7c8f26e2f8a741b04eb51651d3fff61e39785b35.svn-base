@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/refund_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退款时间："
+        android:textColor="#666"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="28px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款内容："
+            android:textColor="#666"
+            />
+        <TextView
+            android:id="@+id/refund_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#666"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/refund_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退货单号"
+        android:textColor="#666"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="28px"
+        />
+    <TextView
+        android:id="@+id/handler_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="操作账号"
+        android:textColor="#666"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="28px"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root_camera_layout">
+
+    <!-- 扫码页面和扫码说明 -->
+    <FrameLayout
+        android:id="@+id/fl_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80px"
+        android:clickable="true">
+
+        <include
+            android:id="@+id/fl_layout_scanning"
+            layout="@layout/code_scanning_share" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <!-- title -->
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_alignParentTop="true"
+            android:background="#bb000000">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/to_left" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="扫描二维码"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <!-- 扫码枪连接状态 android:layout_below="@id/title"-->
+        <RelativeLayout
+            android:id="@+id/rl_barscanner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#bbfff4e4"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_scanner_state_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/scanner_connecting" />
+
+                <TextView
+                    android:id="@+id/tv_barscanner_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="已连接扫码枪设备"
+                    android:textColor="#666"
+                    android:textSize="22px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_blank_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+            android:orientation="vertical">
+
+            <!-- 扫码说明 -->
+            <LinearLayout
+                android:id="@+id/all_scan_code_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_scan_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="将客户的“刷卡码”放入取景框内，即可收款。"
+                    android:textSize="13sp" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_pay_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_payment_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="收款金额" />
+
+                    <TextView
+                        android:id="@+id/tv_gathering_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0.00"
+                        android:textColor="#fff"
+                        android:textSize="80px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_card_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="消费者怎么找到“刷卡码”？"
+                    android:textColor="#37D84C"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 输入手机号码布局 android:visibility="gone"-->
+        <LinearLayout
+            android:id="@+id/rl_enter_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="#000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_enter_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:descendantFocusability="beforeDescendants">
+
+                <EditText
+                    android:id="@+id/et_enter_phone_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:background="#fff"
+                    android:hint="手动输入"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp"
+                    android:paddingLeft="12dp"
+                    android:inputType="number" />
+
+                <RelativeLayout
+                    android:layout_width="135px"
+                    android:layout_height="40dp"
+                    android:background="#4abf2a">
+
+                    <TextView
+                        android:id="@+id/tv_click_comfirm"
+                        android:layout_width="135px"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textSize="14sp"
+                        android:textColor="#fff" />
+
+                    <ImageView
+                        android:id="@+id/iv_confirm_loading"
+                        android:visibility="gone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/loading"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_enter_explain"
+                android:layout_below="@+id/ll_enter_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:text="会员卡：请输入手机号或卡号；券类：请输入券号"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

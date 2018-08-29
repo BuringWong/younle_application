@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.constraint.ConstraintLayout>-->
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/title"
+        layout="@layout/right_title_layout"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="55px"
+        android:paddingTop="55px"
+        android:orientation="vertical"
+        android:layout_below="@id/title">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看打印机说明书，获取打印机的终端号和秘钥，然后将打印机联网。完成上述操作后将打印机的终端号和秘钥在下方输入："
+        android:textSize="28px"
+        android:textColor="#333"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="522px"
+        android:layout_height="152px"
+        android:background="@drawable/printers_shape"
+        android:layout_marginTop="26px"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="请在此填写终端号"
+            android:background="@null"
+            android:textColorHint="#999"
+            android:paddingLeft="24px"
+            android:textSize="26px"/>
+        <View
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dbdbdb"
+            android:layout_centerInParent="true"/>
+        <EditText
+            android:layout_below="@id/tv_line"
+            android:id="@+id/et_screate_key"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="在此填写密钥"
+            android:background="@null"
+            android:paddingLeft="24px"
+            android:textSize="26px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="为本打印机设置备注名称(如厨房用)，选填："
+        android:textSize="28px"
+        android:textColor="#333"
+        android:layout_marginTop="42px"/>
+    <EditText
+        android:id="@+id/et_new_name"
+        android:layout_marginTop="26px"
+        android:layout_width="522px"
+        android:layout_height="76px"
+        android:background="@drawable/printers_shape"
+        android:textSize="26px"
+        android:textColorHint="#999"
+        android:hint="在此填写打印机备注名称"
+        android:paddingLeft="24px"
+        />
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="258px"
+        android:layout_height="76px"
+        android:text="确定"
+        android:textSize="28px"
+        android:textColor="#fff"
+        android:layout_marginTop="58px"
+        android:background="@drawable/positive_btn_selector"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>
+
+

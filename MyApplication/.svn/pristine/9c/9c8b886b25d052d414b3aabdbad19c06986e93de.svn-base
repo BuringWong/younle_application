@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_yun_printer_name"
+        android:paddingLeft="36px"
+        android:paddingRight="18px"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:drawableRight="@drawable/to_right"
+        android:text="本地打印机(本地设备)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:text="打印机设置"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/to_right"
+        android:drawablePadding="10px"
+        android:textColor="#999"
+        android:paddingRight="18px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1"
+        android:layout_marginLeft="18px"
+        android:layout_marginRight="18px"/>
+</com.zhy.autolayout.AutoRelativeLayout>

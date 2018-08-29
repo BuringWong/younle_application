@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/printers_height"
+    android:minHeight="@dimen/printers_height"
+    android:background="#fff"
+    >
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="全部分组"
+        android:textColor="#333"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/iv_group_check_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selected"
+        />
+    <!--<View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1"
+        android:layout_alignParentBottom="true"/>-->
+</com.zhy.autolayout.AutoRelativeLayout>

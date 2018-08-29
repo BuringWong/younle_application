@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <include layout="@layout/titlebar_all"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:paddingTop="40px"
+        android:text="收款金额"
+        android:gravity="center"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/tv_income"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:text="+60.00元"
+        android:textColor="#3a9216"
+        android:textSize="28sp"
+        android:gravity="center"/>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#aeaeae"
+        android:layout_height="0.1dp"/>
+    <ListView
+        android:divider="@null"
+        android:id="@+id/lv_service_detail"
+        android:layout_width="match_parent"
+        android:layout_height="500px">
+    </ListView>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#aeaeae"
+        android:layout_height="0.1dp"/>
+    <Button
+
+        android:id="@+id/btn_mark_reback"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/login_button_selector"
+        android:text="标记为已退款"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

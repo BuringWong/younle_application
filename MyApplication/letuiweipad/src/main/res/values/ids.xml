@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="zero_weigh_outof_range" type="id">
+        重量在-0.6kg到+0.6kg之间时才可以置零。请确保秤台上已无物品。如果没有物品时仍不在此范围内，请重启电子秤以置零。
+    </item>
+</resources>

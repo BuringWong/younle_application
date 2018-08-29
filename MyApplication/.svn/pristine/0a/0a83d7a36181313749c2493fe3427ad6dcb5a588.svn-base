@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/right_title_layout"
+         />
+
+    <TextView
+        android:id="@+id/tv_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="86px"
+        android:layout_marginTop="86px"
+        android:text="TextView"
+        android:textColor="#666"
+        android:textSize="28px"
+        />
+
+    <TextView
+        android:id="@+id/tv_current_advid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="86px"
+        android:layout_marginTop="40px"
+        android:text="TextView"
+        android:textSize="28px"
+        android:textColor="#666"
+         />
+
+    <TextView
+        android:id="@+id/tv_storepie_acctv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="86px"
+        android:layout_marginTop="40px"
+        android:text="TextView"
+        android:textSize="28px"
+        android:textColor="#666"
+         />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="86px"
+        android:layout_marginTop="40px"
+        android:text="TextView"
+        android:textSize="28px"
+        android:textColor="#666"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/button"
+        android:layout_width="250px"
+        android:layout_height="70px"
+        android:layout_marginLeft="86px"
+        android:layout_marginTop="40px"
+        android:textSize="28px"
+        android:textColor="#333"
+        android:background="@drawable/native_btn_selector"
+        tools:text="上传日志" />
+</com.zhy.autolayout.AutoLinearLayout>

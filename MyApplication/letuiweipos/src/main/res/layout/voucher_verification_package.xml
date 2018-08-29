@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/titlebar_upgrade"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="券信息"/>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ababab"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包含内容"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="空"/>
+
+            <!-- android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/ll_voucher_function"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优惠券功能"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_voucher_function"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:text="空"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <!-- 2015年6月19日-2015年12月1日 -->
+            <TextView
+                android:id="@+id/tv_validity_period"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="空" />
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ababab"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/login_button_selector"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"
+                android:text="核销"/>
+            <TextView
+                android:id="@+id/tv_status"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

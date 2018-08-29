@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_barscanner"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:minHeight="35dp"
+    android:visibility="gone"
+    android:background="#fff4e4"
+    android:gravity="center">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_scanner_state_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scanner_connecting"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_barscanner_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:text="已连接扫码枪设备"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

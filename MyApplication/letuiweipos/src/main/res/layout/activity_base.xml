@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/titlebar_all"
+        android:id="@+id/jiazai_title"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/jiazai_title"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_show_wxapp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:background="@color/status_background"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用“门店派管家”查看更多门店数据，"
+                android:textSize="24px"
+                android:textColor="#666"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3f88cd"
+                android:textSize="24px"
+                android:text="点击查看"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <!--搜索订单-->
+        <include layout="@layout/search_layout_for_order"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f2f2f2"/>
+        <!--按订单统计，按收入统计-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_normal"
+                >
+                <include layout="@layout/order_list_two_header"/>
+                <!--选择日期-->
+                <include layout="@layout/order_titlebar_all"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#f2f2f2"/>
+                <!--全部，收款方式，收款工具-->
+                <include layout="@layout/order_titlebar_filter"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#f2f2f2"/>
+                <!--筛选条件-->
+                <include layout="@layout/common_filter_layout"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <ListView
+                android:id="@+id/lv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/jiazai_layout"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

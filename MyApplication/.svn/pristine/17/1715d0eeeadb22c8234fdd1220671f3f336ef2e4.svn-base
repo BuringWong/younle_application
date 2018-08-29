@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.younle.younle624.myapplication">
+
+    <!-- 接收开机广播的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问WiFi状态. 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络状态, 检测网络的可用性. 需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 访问手机当前状态, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 蓝牙打印的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <permission
+        android:name="com.younle.younle624.myapplication.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.younle.younle624.myapplication.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 杀死后台进程 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <!-- android:windowSoftInputMode="adjustPan" -->
+        <activity android:name=".activity.regist.resetpassword.FindPassWordActivity" />
+        <activity android:name=".activity.regist.RegistActivity" />
+        <activity android:name=".activity.regist.resetpassword.ResetPassWordActivity" />
+        <activity android:name=".activity.regist.resetpassword.FinishResetPassWord" />
+        <activity android:name=".activity.voucher.cancel.CancelPackage" />
+        <activity android:name=".activity.voucher.cancel.CancelSuccess" />
+        <activity android:name=".activity.voucher.cancel.CancelFail" />
+        <activity
+            android:name=".activity.regist.RegistSuccessActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- <activity android:name=".activity.bindstore.AddStoreActivity" /> -->
+        <activity android:name=".activity.regist.bindstore.InputStoreInfoActivity" />
+        <activity android:name=".activity.regist.bindstore.BindStoreSuccessActivity" />
+        <activity
+            android:name=".activity.regist.bindstore.CategoryChooseActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.regist.bindstore.MarkLocationActivity" />
+        <activity android:name=".activity.regist.bindstore.LocationMarkActivity" />
+        <!-- android:windowSoftInputMode="stateAlwaysHidden djustUnspecified|stateHidden" -->
+        <activity
+            android:name="zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="zxing.activity.Voucheractivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="zxing.activity.AboutActivity" />
+        <activity
+            android:name=".activity.manager.orderpager.pos.PosOrderActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.manager.orderpager.BillDetailActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.manager.orderpager.service.ServiceEcActivity" />
+        <activity android:name=".activity.manager.orderpager.entity.EntityEcActivity" />
+        <activity android:name=".activity.manager.orderpager.service.ServiceOrderDetailActivity" />
+        <activity android:name=".activity.manager.orderpager.ShowChartActivity" />
+        <activity android:name=".activity.manager.OrderManagerActivity" />
+        <activity android:name=".activity.manager.DeviceInfoActivity" />
+        <activity android:name=".activity.manager.ordersetting.OrderSettingActivity" />
+        <activity android:name=".activity.regist.RegistLtwActivity" />
+        <activity android:name=".activity.manager.ordersetting.BaseSettingActivity" />
+        <activity
+            android:name=".activity.createorder.AddServiceGoodActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.pos.CollectionFailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.pos.CollectionSuccessActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.createorder.OrderDetailActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.createorder.AddOrderDetailActivity" />
+        <activity android:name=".activity.manager.printdeviceset.PrintDeviceSetting" />
+        <activity android:name=".activity.manager.ordersetting.SettingItemDetailActivity" />
+        <activity android:name=".activity.manager.printdeviceset.AddBluetoothActivity" />
+        <activity android:name=".activity.manager.printdeviceset.RemarkDeviceActivity" />
+        <activity android:name=".activity.manager.printdeviceset.AddRomateDeviceActivity" />
+        <activity android:name=".activity.createorder.NewOrderActivity" />
+        <activity android:name=".activity.pos.CollectionUnknownActivity" />
+        <activity android:name=".activity.manager.orderpager.AboutH5Activity" />
+        <activity android:name=".activity.HowToCreateAccountActivity" />
+        <activity android:name=".activity.manager.orderpager.pos.HowToUseZfbWxActivity" />
+        <activity android:name=".activity.manager.membercenter.ChargeActivity" />
+        <activity android:name=".activity.orderguide.UpgradeAccountActivity" />
+        <activity android:name=".activity.orderguide.QRCodeActivity" />
+        <activity android:name=".activity.orderguide.UpgradeAccountSuccessActivity" />
+        <activity android:name=".activity.orderguide.UpgradeAccountFailActivity" />
+        <activity android:name=".activity.takeoutfood.BandNumActivity" />
+        <activity android:name=".activity.takeoutfood.OutFoodManageActivity" />
+        <activity android:name=".activity.takeoutfood.BindMtActivity" />
+        <activity android:name=".activity.takeoutfood.BindBDActivity" />
+        <activity android:name=".activity.takeoutfood.WaiMaiActivity" />
+        <activity android:name=".activity.takeoutfood.WmAccountSettingActivity" />
+        <activity
+            android:name=".activity.KeepAliveActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.PintActivity" />
+        <activity android:name=".activity.manager.orderpager.pos.PayQRCodeActivity" />
+        <activity
+            android:name=".activity.manager.barscanner.BandBarScannerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity android:name=".activity.manager.messagecenter.MsCenterActivity" />
+        <activity android:name=".activity.orderguide.OpenOrderActivity" />
+        <activity android:name=".activity.manager.printdeviceset.TicketSettingActivity" />
+        <activity android:name=".activity.manager.printdeviceset.PrintGroupSettingActivity" />
+        <activity android:name=".activity.manager.orderpager.RefundActivity"></activity>
+
+        <service
+            android:name=".myservice.waimai.InitGTService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".myservice.waimai.GTPushService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".activity.manager.orderpager.bluetoothprinter.BtService" />
+        <service
+            android:name=".myservice.FailOrderService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.younle.younle624.myapplication" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".myservice.PrintService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".activity.manager.weigher.BluetoothLeService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".myservice.WxAppyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.WmOrderReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收rigistrationid -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+
+                <category android:name="com.younle.younle624.myapplication" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.ScreenOnOffReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".receiver.BlueToothReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="1db4d6a1a6270382da7a64f7" />
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="KVWBZ-MTFAF-J75JR-JKVPM-3UADK-ITFEJ" />
+        <meta-data
+            android:name="api_key"
+            android:value="OKhjfn4aa3hBBEULlnMffsCP" />
+        <meta-data
+            android:name="design_width"
+            android:value="540" />
+        <meta-data
+            android:name="design_height"
+            android:value="960" />
+
+        <activity android:name=".activity.orderguide.FunctionDetailActivit" />
+        <activity android:name=".activity.manager.membercenter.MemberCenter" />
+        <activity android:name=".activity.manager.weigher.WeigherManagerActivity" />
+        <activity android:name=".activity.manager.printdeviceset.AddNewDeviceActivity" />
+        <activity android:name=".activity.voucher.cancel.VoucherDetailActivity"></activity>
+    </application>
+
+</manifest>

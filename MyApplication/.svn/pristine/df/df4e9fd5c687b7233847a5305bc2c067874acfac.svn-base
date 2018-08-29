@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_charger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="#fff"
+    tools:context="com.younle.younle624.myapplication.activity.manager.membercenter.ChargeActivity">
+    <include layout="@layout/titlebar_all"/>
+    <ListView
+        android:layout_below="@id/title_all"
+        android:divider="@null"
+        android:id="@+id/lv_charge_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+</com.zhy.autolayout.AutoRelativeLayout>

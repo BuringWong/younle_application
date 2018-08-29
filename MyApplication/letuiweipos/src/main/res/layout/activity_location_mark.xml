@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <include layout="@layout/titlebar_all"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/addstore_location"
+        />
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="3dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/et_search_address"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/password_find_mobilenum"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"/>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="搜索"
+            android:textSize="15sp"
+            android:background="@drawable/password_find_getcode_selector"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+        <com.younle.younle624.myapplication.view.XListView
+            android:id="@+id/xlv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></com.younle.younle624.myapplication.view.XListView>
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索中..."/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <com.younle.younle624.myapplication.view.SelfMapView
+            android:id="@+id/tecent_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/location_indictor"
+            />
+    </RelativeLayout>
+
+    <com.younle.younle624.myapplication.view.XListView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/reference_list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+    </com.younle.younle624.myapplication.view.XListView>
+    <Button
+        android:id="@+id/btn_setting_next"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/login_button_selector"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+</LinearLayout>

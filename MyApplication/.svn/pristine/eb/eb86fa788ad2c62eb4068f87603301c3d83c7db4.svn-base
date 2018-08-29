@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+  >
+   <!-- <DatePicker
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></DatePicker>-->
+    <include layout="@layout/titlebar_all"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110px"/>
+    <TextView
+        android:id="@+id/imei"
+        android:paddingLeft="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前设备编号(IMEI):1231243554"
+        android:textSize="28px"
+        android:layout_marginTop="120px"/>
+
+    <TextView
+        android:id="@+id/userid"
+        android:paddingLeft="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定的品牌主账号：18511162693"
+        android:textSize="28px"
+        android:layout_marginTop="30px"/>
+    <TextView
+        android:id="@+id/store"
+        android:paddingLeft="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前使用门店：Burberry朝阳门店"
+        android:textSize="28px"
+        android:layout_marginTop="30px"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60px"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px">
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前软件版本：V1.0"
+            android:textSize="28px"
+            />
+        <Button
+            android:layout_marginLeft="15dp"
+            android:id="@+id/version_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本检查"
+            android:visibility="gone"
+            android:textSize="28px"
+            android:textColor="#3366ff"
+           />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

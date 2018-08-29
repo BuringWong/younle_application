@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/gwc_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/fl_bottom_info">
+
+        <RelativeLayout
+            android:id="@+id/list_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f1f1f1">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#666"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:text="请选择配送员"
+                android:textColor="#999"/>
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:divider="@null"
+            android:id="@+id/lv_order_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+        </ListView>
+    </com.zhy.autolayout.AutoLinearLayout>
+</RelativeLayout>

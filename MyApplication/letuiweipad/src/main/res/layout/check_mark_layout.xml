@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:maxWidth="200dp"
+    android:minWidth="200dp"
+    android:layout_height="wrap_content"
+    android:maxHeight="150dp"
+    android:orientation="vertical"
+    android:background="@drawable/mark_pop_back_shape">
+
+    <TextView
+        android:id="@+id/tv_mark_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="#333"
+        android:textSize="32px"
+        android:text="查看标签"/>
+
+    <com.yongle.letuiweipad.view.MyScrollView
+        android:id="@+id/sl_mark"
+        android:layout_below="@+id/tv_mark_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalScrollbarPosition="right"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="60px">
+
+        <com.yongle.letuiweipad.view.FlowLayout
+            android:id="@+id/fl_multi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </com.yongle.letuiweipad.view.FlowLayout>
+    </com.yongle.letuiweipad.view.MyScrollView>
+
+    <!--<View
+        android:id="@+id/view_gray_line"
+        android:layout_below="@+id/sl_mark"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1"/>-->
+
+ <!--   <TextView
+        android:id="@+id/tv_click_to_close"
+        android:layout_below="@+id/view_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#3f88ce"
+        android:textSize="24px"
+        android:text="关闭弹层"/>-->
+    <TextView
+        android:layout_marginTop="80px"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_click_to_close"
+        android:layout_width="260px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="关闭"
+        android:textSize="16sp"
+        android:background="@drawable/native_btn_selector"/>
+</com.zhy.autolayout.AutoLinearLayout>

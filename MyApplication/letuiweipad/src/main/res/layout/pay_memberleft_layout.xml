@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/right_bottom_shape"
+    android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/ll_memberpay_lack"
+        layout="@layout/charge_and_pay"
+        android:visibility="gone" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_memberpay_enough"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_memberpay_memberleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            android:text="会员卡余额：238.00"
+            android:textColor="#333"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_memberpay_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45px"
+            android:text="（从余额中直接抵扣）"
+            android:textColor="#666"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_member_pay"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:layout_marginTop="52px"
+            android:background="@drawable/finish_cardpay_shape"
+            android:gravity="center"
+            android:text="确认收款"
+            android:textColor="#fff"
+            android:textSize="28px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

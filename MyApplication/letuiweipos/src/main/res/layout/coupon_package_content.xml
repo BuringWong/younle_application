@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/coupon_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#000000"
+    android:text="优惠券内容"/>
+    <TextView
+        android:id="@+id/coupon_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="xxxxxx料理1份，价值¥68"/>
+    <TextView
+        android:id="@+id/validity_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="有限期"/>
+    <TextView
+        android:id="@+id/validity_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2015年6月19日-2015年12月1日"/>
+</LinearLayout>

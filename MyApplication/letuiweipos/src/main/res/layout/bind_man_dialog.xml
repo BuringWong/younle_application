@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F2F2F2">
+        <TextView
+            android:id="@+id/order_content"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="泰式按摩1钟"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15px"
+            android:paddingRight="25px"
+            android:text="返回"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20px"
+            android:paddingRight="15px"
+            android:text="确定(可跳过)"
+            android:textColor="#000"
+            android:textSize="20px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#888" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_setting_kinds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:layout_weight="1"
+            ></ListView>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#ababab" />
+
+        <ListView
+            android:id="@+id/lv_setting_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:divider="@null"></ListView>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

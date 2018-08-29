@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="130px"
+    android:layout_marginBottom="20px"
+    android:layout_marginLeft="15px"
+    android:layout_marginRight="15px"
+    android:gravity="center_vertical"
+    android:background="@drawable/setting_address_shape">
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实物商品设置"
+        android:textSize="28px"
+        android:textColor="#292929"
+        android:padding="20px"/>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_name"
+        android:text="您在此可以查看各项商品的详细信息"
+        android:paddingLeft="20px"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/to_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

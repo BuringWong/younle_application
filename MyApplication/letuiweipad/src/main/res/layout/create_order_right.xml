@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1090px"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/right_bottom_shape"
+    android:orientation="vertical"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/right_title_shape">
+        <TextView
+            android:id="@+id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:gravity="center"
+            android:text="外接设备："
+            android:textColor="#666"
+            android:textSize="28px" />
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_scanner_state"
+            android:layout_width="88px"
+            android:layout_height="36px"
+            android:background="@drawable/scanner_state_connect"
+            android:gravity="center"
+            android:layout_alignTop="@+id/tv_right_title"
+            android:layout_toRightOf="@+id/tv_right_title"
+            android:layout_toEndOf="@+id/tv_right_title">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="扫码"
+                android:textColor="#fff"
+                android:textSize="22px"
+                android:gravity="center_vertical"
+                android:layout_marginRight="6px"
+                />
+            <ImageView
+                android:id="@+id/iv_scanner_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/connected"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_weigher_state"
+            android:layout_width="wrap_content"
+            android:layout_height="36px"
+            android:background="@drawable/scanner_state_connect"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/ll_scanner_state"
+            android:layout_alignTop="@+id/tv_right_title"
+            android:layout_marginLeft="20px"
+            >
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_reconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="5px"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/weigher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="秤"
+                    android:textColor="#fff"
+                    android:textSize="22px"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="6px"
+                    android:layout_marginLeft="6px"
+                    />
+                <ImageView
+                    android:id="@+id/iv_weigher_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/connected"
+                    />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/tv_current_weigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginRight="5px"
+                android:textSize="22px"
+                android:textColor="#fff"
+                android:visibility="gone"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView
+            android:id="@+id/tv_update_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableLeft="@drawable/update_goods"
+            android:text="更新商品"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="15dp"
+            />
+        <include layout="@layout/search_layout" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dadada" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gs_dic_shape"
+        >
+
+        <ListView
+            android:layout_marginBottom="3px"
+            android:id="@+id/lv_right"
+            android:layout_width="162px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/kind_lv_shape"
+            android:divider="@null"></ListView>
+
+        <GridView
+            android:id="@+id/gv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/lv_right"
+            android:layout_marginLeft="10dp"
+            android:horizontalSpacing="7dp"
+            android:numColumns="4"
+            android:verticalSpacing="7dp"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            ></GridView>
+
+        <GridView
+            android:id="@+id/gv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24px"
+            android:layout_toLeftOf="@id/lv_right"
+            android:horizontalSpacing="7dp"
+            android:numColumns="4"
+            android:verticalSpacing="7dp"
+            android:visibility="gone"></GridView>
+        <TextView
+            android:id="@+id/tv_nogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无商品，请到PC端设置商品"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/lv_right"
+            android:textSize="28px"
+            />
+        <include layout="@layout/net_error_layout"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

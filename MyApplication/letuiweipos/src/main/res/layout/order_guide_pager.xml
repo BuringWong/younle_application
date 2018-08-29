@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include layout="@layout/titlebar_upgrade"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="需开通“会员营销”才可使用以下功能！"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:textColor="#3f88cd"
+        android:text="下单功能:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingMultiplier="1.3"
+        android:textSize="14sp"
+        android:text="@string/order_function"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40px"
+        android:textSize="16sp"
+        android:textColor="#3f88cd"
+        android:text="会员系统:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingMultiplier="1.3"
+        android:textSize="14sp"
+        android:text="商户可通过此功能积累自己的会员。提供会员折扣，会员储值功能。"/>
+
+    <Button
+        android:id="@+id/btn_upgrade_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_button_selector"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="立即开通"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

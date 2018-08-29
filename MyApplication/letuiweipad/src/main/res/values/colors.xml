@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rbtn_unchenck">#f444</color>
+    <color name="rbtn_chenck">#000</color>
+    <color name="left_gray_bg">#f5f5f5</color>
+    <color name="print_button_normal">#FB9927</color>
+    <color name="print_button_press">#CB7C1F</color>
+    <color name="encode_view">#ffffff</color>
+    <color name="findpassword_getcode_press">#fff8ea</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="change_money">#cccccc</color>
+    <color name="devide_line">#d7d7d7</color>
+    <color name="black90">#383431</color><!--黑色 -->
+
+</resources>

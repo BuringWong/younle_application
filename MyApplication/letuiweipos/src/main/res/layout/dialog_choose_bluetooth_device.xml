@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272a3b"
+        android:padding="16dp"
+        android:text="选择蓝牙设备"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="已配对的设备"
+        android:textSize="15sp" />
+
+    <View style="@style/BaseLine" />
+
+    <ListView
+        android:id="@+id/lv_dialog_choose_bluetooth_device_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dddddd"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_choose_bluetooth_device_paired_devices_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="您还没有已配对的设备"
+        android:textColor="#7f7f7f"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <View style="@style/BaseLine" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_dialog_choose_bluetooth_device_search_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="搜索设备"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_dialog_choose_bluetooth_device_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+             />
+
+    </FrameLayout>
+
+    <View style="@style/BaseLine" />
+
+    <ListView
+        android:id="@+id/lv_dialog_choose_bluetooth_device_found_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dddddd"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_choose_bluetooth_device_found_devices_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="未在附近找到蓝牙设备"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

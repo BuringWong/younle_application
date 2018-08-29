@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_all"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentTop="true"
+    android:background="#3f88cd">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-15dp"
+        android:padding="10dp"
+        android:src="@drawable/to_left"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10px"
+        android:gravity="center"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:text="取消"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="找回密码"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_mark_reback"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10px"
+        android:gravity="center_vertical"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:text="识别会员"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

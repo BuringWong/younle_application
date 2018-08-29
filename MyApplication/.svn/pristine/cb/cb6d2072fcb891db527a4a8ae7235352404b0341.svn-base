@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.younle.younle624.myapplication.view.SelfLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/jiazai_title"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/iv_jiazai_filure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/net_error"
+            android:visibility="gone"
+            android:layout_marginBottom="65px"/>
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="拼命加载中..."/>
+    </com.younle.younle624.myapplication.view.SelfLinearLayout>

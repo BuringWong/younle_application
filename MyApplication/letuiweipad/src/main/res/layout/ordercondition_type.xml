@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/al_type"
+    android:layout_width="wrap_content"
+    android:layout_height="42dp"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="统计类型"
+        android:textSize="26px"
+        android:textColor="#666"
+        android:layout_marginRight="30px"
+        android:layout_centerVertical="true"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_type_name"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/rg_type">
+        <RadioButton
+            android:id="@+id/order_list"
+            android:text="商品订单"
+            android:layout_toRightOf="@id/tv_type_name"
+            style="@style/conditions"
+            />
+        <RadioButton
+            android:id="@+id/membercharge_list"
+            android:layout_toRightOf="@id/order_list"
+            android:text="会员充值"
+            style="@style/conditions"/>
+    </RadioGroup>
+</com.zhy.autolayout.AutoRelativeLayout>

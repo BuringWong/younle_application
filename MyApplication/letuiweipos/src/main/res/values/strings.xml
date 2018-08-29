@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">乐推微门店派</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_time">时间：</string>
+    <string name="footer_hint_load_normal">上拉加载更多</string>
+    <string name="footer_hint_load_ready">松开加载更多</string>
+    <string name="header_hint_refresh_ready">松开刷新</string>
+    <string name="header_hint_refresh_loading">刷新中...</string>
+    <string name="footer_hint_no_more_data">没有更多了</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="divide">÷</string>
+    <string name="multply">×</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="point">.</string>
+    <string name="count_clear">清除</string>
+    <string name="wx_collection">微信收款</string>
+    <string name="zfb_collection">支付宝收款</string>
+    <string name="nodata">当前筛选条件下没有数据，请更换筛选数据</string>
+    <string name="nodata_after_request">没有更多的数据</string>
+    <string name="all_kinds">全部商品</string>
+    <string name="all_kinds_">全部商品-</string>
+    <string name="try_loading">拼命加载中...</string>
+    <string name="click_to_reload">网络异常，点击屏幕重新加载</string>
+    <string name="click_to_see_detail">向左侧滑动可以设置不可用</string>
+    <string name="click_to_see_detail_room">向左侧滑动可以设置不可用</string>
+    <string name="click_to_see_detail_man">向左侧滑动可以设置不可用</string>
+    <string name="no_data_setted">尚未设置任何数据，请登录乐推微官网进行设置</string>
+    <string name="service_setting_item_desc">您可以在此查看各项服务的详细信息并可以更改其状态</string>
+    <string name="man_setting_item_desc">您可以在此查看人员的详细信息并可以更改其状态</string>
+    <string name="room_setting_item_desc">您可以在此查看各房间的详细信息并可以更改其状态</string>
+    <string name="good_setting_item_desc">您可以在此查看各项商品的详细信息并可以更改其状态</string>
+    <string name="regist_success_step1">1、使用您刚注册的账号，登录http://tui.younle.com(请使用电脑操作)。</string>
+    <string name="regist_success_step2">2、找到“门店营销-门店营销-门店及POS设备管理”,添加您的门店信息。</string>
+    <string name="regist_success_step3">3、在您已添加的门店信息中创建您的POS设备账号。</string>
+    <string name="regist_success_step4">4、使用您创建的POS设备账号登录本设备，账号才可以被激活，本设备才可以使用。</string>
+    <string name="try_later">请稍后再试！</string>
+    <string name="offline_notice">您的当前账号已在此设备下线，因为它正在其他设备上登录，请检查账号安全。</string>
+    <string name="abnormal_account">您的当前账号的密码已经被修改，请您重新登录。</string>
+    <string name="is_first_landed_none_band">设备账号{POS设备账号}已经成功激活，账号类型为:普通账号\n\n微信支付、支付宝支付暂不可用，请您登录乐微推，找到"门店营销"完成相应的设置。</string>
+    <string name="is_first_landed_wx_band">设备账号{POS设备账号}已经成功激活，账号类型为:普通账号\n\n支付宝支付暂不可用，请您登录乐微推，找到"门店营销"完成相应的设置。</string>
+    <string name="is_first_landed_zfb_band">设备账号{POS设备账号}已经成功激活，账号类型为:普通账号\n\n微信支付暂不可用，请您登录乐微推，找到"门店营销"完成相应的设置。</string>
+    <string name="is_first_landed_both_band">设备账号{POS设备账号}已经成功激活，账号类型为:普通账号\n</string>
+    <string name="click_wx_no_band">您需要开通微信支付收款账户才能使用本功能。\n登录乐推微，找到“门店营销”填写相应的资料即可开通。</string>
+    <string name="click_zfb_no_band">您需要开通支付宝支付收款账户才能使用本功能。\n登录乐推微，找到“门店营销”授权登录您的支付宝账号即可开通。</string>
+
+    <string name="network_abnormal">收款失败</string>
+    <string name="network_abnormal_solve_way">请重新发起收款</string>
+    <string name="payment_transaction_completed">支付交易完成</string>
+    <string name="determine">确定</string>
+    <string name="no_network_please_check">没有网络，请检查网络</string>
+    <string name="no_network_please_cash_card">当前无网络，请使用“现金记账”或“刷卡记账”收款</string>
+    <string name="not_open_wx_pay">您没有开通微信支付</string>
+    <string name="not_open_zfb_pay">您没有开通支付宝支付</string>
+    <string name="pay_money_max">收款金额不能大于999999.99元</string>
+    <string name="enter_money_min">输入金额不能小于-999999.99元</string>
+    <string name="pay_money_zero">请输入收款金额</string>
+    <string name="pay_money_min">收款金额不能小于0.01元</string>
+    <string name="rmb_symbol">￥</string>
+    <string name="scan_failed">扫描失败</string>
+    <string name="scan_success">扫描成功</string>
+    <string name="enter_pay_money">输入收款金额</string>
+    <string name="set_two_decimal_places_zero">0.00</string>
+    <string name="how_to_create_account">没有门店派账号？查看如何创建门店派账号</string>
+
+    <string name="alert_info_head">您选择订单结束时间和其他订单冲突!\n房间{</string>
+    <string name="alert_info_body">}只可以使用到</string>
+    <string name="alert_info_end">,请与顾客确认。</string>
+    <string name="alert_info_choosed">该房间刚刚已经被选择了，请选择其他房间。</string>
+
+    <string name="order">订单</string>
+    <string name="cancel">   取消</string>
+    <string name="create_order"> 创建订单</string>
+    <string name="no_data_click_to_reload">没有数据，点击屏幕重新加载！</string>
+    <string name="bd_condition">目前百度外卖仅支持KA商户（知名品牌、连锁门店等客户）对接，百度平台会进行相应审核，审核通过方可使用</string>
+    <string name="bd_waiter_info">您的客户经理：刘丽艳\n电话：010-67085435-810\nQQ：28748597389</string>
+    <string name="bd_no_match">可以在此绑定另外两个平台账号。同时打开百度外卖APP（保证其后台运营不要关闭），同样可以实现三个外卖平台同时接单并打印</string>
+    <string name="bind_elm_notice">绑定饿了么账号需要联系您的\n客服专员刘丽艳提交资料：\n\n电话：010-670856435转810\nQQ：285226545</string>
+    <string name="change_elm_notice">更换饿了么账号需要联系您的\n客服专员刘丽艳提交资料：\n\n电话：010-670856435转810\nQQ：285226545</string>
+    <string name="bind_none">至少要绑定一个外卖平台账号</string>
+    <string name="wm_jiedan_notices">
+        使用过程中不要关闭本应用(可后台运行)。\n退出门店派账号将关闭自动接单,重登后需手动打开接单状态\n本功能仅用于接单打印，如需取消订单、管理订单、或查看详细订单数据,请至相应外卖平台APP操作。
+    </string>
+    <string name="close_wm_notices">自动接单关闭后，本应用将不再接单打印，请到相应的外卖平台处理订单。如有新订单，超过5分钟不处理会被外卖平台自动拒绝，拒绝订单两次店铺将会被置休，若重新开业需在相应外卖平台上设置。</string>
+    <string name="top5_guide_memberpay">尚未开通“会员营销功能”，不能统计明星产品，要想展示此数据，请先为门店派账号开通“会员营销”</string>
+    <string name="top5_nodata">暂无数据，请先至乐推微PC端设置商品，并使用“下单”功能，为顾客下单</string>
+    <string name="no_pay_result">可能已经收款成功</string>
+    <string name="may_pay_success">尚未收到收款结果</string>
+    <string name="order_function">可现场下单或者定房间桌台，订单信息中不仅有金额流水，还有具体商品信息。提供每天不同时段或自定义时间区间的收入趋势分布图
+        、热销商品、客单价分布等数据分析图表，让您直观了解自己店铺的运营状况。</string>
+    <string name="exit_wm_open">您确定要退出当前门店派账号么？退出本门店派账号后,外卖版块将停止自动接单</string>
+    <string name="exit_wm_off">您确定要退出当前门店派账号么？</string>
+    <string name="close_wm_error">外卖模块自动接单功能关闭失败，建议您进入外卖模块，手动关闭自动接单。以免在退出账号后出现仍然自动接单
+    但无法提示并打印的情况，从而造成损失</string>
+
+    <string name="income_statistics">以售出商品为统计标准,即订单流水,不包括会员充值</string>
+    <string name="order_statistics">会员充值预收金额统计</string>
+    <string name="may_price_change">订单价格可能已经改变，请重新刷新页面</string>
+    <string name="get_moduleprice_fail">获取价格失败请重试！</string>
+
+
+    <string name="no_pay_reget_code">1、如果顾客尚未扫码付款，请点此重新获取付款二维码</string>
+    <string name="already_pay_no_result">2、如果顾客已完成付款，请点此刷新页面</string>
+    <string name="wm_overdue">您购买的“外卖多平台自动接单”模块已过期，为避免影响正常使用，请您及时续费。</string>
+    <string name="enter_character_limit">0123456789</string>
+    //产品设计为只识别数字abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+    <string name="not_open_search_prompt">暂无数据，开通自助点单小程序可实现顾客自助点单，节省商家人力成本。</string>
+
+    <string name="check_printer_info">查看打印机说明书，获取打印机的终端号和秘钥，然后将打印机联网。完成上述操作后将打印机的终端号和秘钥在下方输入：</string>
+    <string name="check_setting_introduce">第一步，接通打印机电源并长按开机键，将打印机开机。\n第二步，查看打印机说明书，按说明书指示将设备链接网络。\n第三步，查看打印机说明书，按照说明书指示获取打印机的终端号和秘钥。\n第四步，在下方填写打印机的终端号和秘钥并自定义打印机的名称，完成所有操作后点击“确定</string>
+    <string name="enter_device_num">在此输入终端号</string>
+    <string name="enter_device_password">在此输入密钥</string>
+    <string name="enter_printer_remarks_for_look">请输入打印机备注，以便在列表中快速找到本设备</string>
+    <string name="enter_printer_remarks">在此输入备注</string>
+    <string name="btn_add_printer">添加</string>
+
+    <string name="reamrk_pay_statement">记账功能仅为标记订单的结账状态，以便您可以查看完整的订单及收款记录。记账功能并不表示实际收款状态，请你一定在确定用户付款成功后再使用本功能。</string>
+    <string name="zero_weigh_outof_range">重量在-0.6kg到+0.6kg之间时才可以置零。请确保秤台上已无物品。如果没有物品时仍不在此范围内，请重启电子秤以置零。</string>
+    <string name="zero_weigh_mode_error">净重模式下无法进行置零操作，如果想恢复0位，请清空秤台上的物品再次点击“去皮”</string>
+    <string name="tare_weigh_error">0位异常，无法进行此操作，请清空秤台上的物品后点击“置零”恢复0位后再称重。</string>
+    <string name="wxapp_function_notice">随时随地了解门店营收情况、商品销售情况、会员数据等。</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order_unnormal">订单异常</string>
+
+</resources>

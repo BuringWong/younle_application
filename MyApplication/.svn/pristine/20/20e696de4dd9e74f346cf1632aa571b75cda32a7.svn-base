@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a5a5a5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f1f1f1"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_date"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部门店交易记录"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#a5a5a5"
+            android:layout_above="@+id/third"/>
+        <TextView
+            android:id="@+id/tv_change_condtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="筛选"
+            android:gravity="center_vertical"
+            android:textColor="#3366ff"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/tv_title_date"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/char_all_third"/>
+        <include layout="@layout/char_justfor_coucher"/>
+        <com.younle.younle624.myapplication.view.SelfImageView
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:id="@+id/tv_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ab_bottom_solid_dark_holo"/>
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/data_to_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+        </ListView>
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#a5a5a5"/>-->
+
+
+</LinearLayout>

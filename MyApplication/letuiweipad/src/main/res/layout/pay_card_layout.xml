@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/right_bottom_shape"
+    >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pos_pay_icon"
+            android:layout_marginTop="112px"
+            />
+        <TextView
+            android:id="@+id/card_pay_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请在POS机端完成刷卡操作"
+            android:textSize="36px"
+            android:textColor="#333"
+            android:layout_marginTop="45px"/>
+        <TextView
+            android:id="@+id/finsh_card_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（完成后再点下方按钮）"
+            android:textSize="20px"
+            android:textColor="#666"
+            android:layout_marginTop="45px"/>
+        <TextView
+            android:id="@+id/card_pay_sure"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:textColor="#fff"
+            android:textSize="28px"
+            android:text="完成刷卡"
+            android:gravity="center"
+            android:background="@drawable/positive_btn_selector"
+            android:layout_marginTop="80px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

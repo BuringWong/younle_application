@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/refund_root"
+    tools:context="com.younle.younle624.myapplication.activity.manager.orderpager.RefundActivity">
+
+    <include layout="@layout/titlebar_upgrade"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_all"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="请选择退款商品："
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:gravity="center_vertical"
+            android:layout_below="@id/title_all"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f1f1f1"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5b5e65">
+        <LinearLayout
+            android:id="@+id/sure_refund"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/par_order"
+            android:gravity="center"
+
+            >
+            <ImageView
+                android:id="@+id/iv_callbacking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scanner_connecting"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定退款"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/refund_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_finish_order"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:text=""/>
+    </RelativeLayout>
+
+</RelativeLayout>

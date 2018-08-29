@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/voucher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="订单1"
+            android:textColor="#292929"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_peisong_state"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="已配送"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_room_consume_des"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/ll_deliver_msg"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:text="配送员："
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/tv_arrive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:text="送达时间："
+            android:layout_marginBottom="8dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_customer_name_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:text="收货人："
+            android:layout_marginBottom="8dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_customer_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:text="地址："
+            android:layout_marginBottom="8dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="3dp"
+        android:background="#f1f1f1"/>
+</LinearLayout>

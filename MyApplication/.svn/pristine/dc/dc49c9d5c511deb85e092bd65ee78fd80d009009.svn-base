@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_charg_cell_choose"
+    android:layout_height="35dp"
+    android:padding="0.1dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bind_waiter_shape"
+    >
+    <RadioGroup
+        android:id="@+id/rg_charg_cell_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/voucher_rg_background"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <RadioButton
+            android:checked="true"
+            android:gravity="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/voucher_rb_selector"
+            android:id="@+id/rb_hour"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="每小时"
+            android:textColor="@drawable/rb_textcolor_selecor"
+            android:textSize="15sp" />
+        <RadioButton
+            android:gravity="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/voucher_rb_selector"
+            android:id="@+id/rb_night"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="每晚"
+            android:textColor="@drawable/rb_textcolor_selecor"
+            android:textSize="15sp" />
+    </RadioGroup>
+</LinearLayout>

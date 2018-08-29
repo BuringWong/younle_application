@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:id="@+id/rl_choose_multi_goods">
+
+        <LinearLayout
+            android:id="@+id/ll_pop_continer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/ll_shape_timmer_cut">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_good_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="查看标签"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_click_to_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="10dp"
+                    android:src="@drawable/close_icon"/>
+            </RelativeLayout>
+
+            <com.younle.younle624.myapplication.view.FlowLayout
+                android:id="@+id/fl_multi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_multi_pos_one"
+                    android:clickable="true"
+                    style="@style/text_style_label"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_multi_pos_two"
+                    style="@style/text_style_label"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_multi_pos_three"
+                    style="@style/text_style_label"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_multi_pos_four"
+                    style="@style/text_style_label"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_multi_pos_five"
+                    style="@style/text_style_label"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_multi_pos_six"
+                    style="@style/text_style_label"
+                    android:text="" />
+            </com.younle.younle624.myapplication.view.FlowLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#f1f1f1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="关闭弹层"
+                android:textColor="#3f88ce"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

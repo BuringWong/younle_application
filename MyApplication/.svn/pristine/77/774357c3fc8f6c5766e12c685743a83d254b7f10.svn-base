@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/jiazai_title"
+        layout="@layout/titlebar_all" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/jiazai_title"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/titlebar_all"/>-->
+
+        <include layout="@layout/order_list_two_header"/>
+
+        <include layout="@layout/order_titlebar_all" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f2f2f2" />
+
+        <include layout="@layout/order_titlebar_filter" />
+
+        <include layout="@layout/chart_filter_layout" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/jiazai_layout" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

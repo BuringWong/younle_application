@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/titlebar_upgrade"/>
+
+    <TextView
+        android:id="@+id/tv_add_new_device"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/select_store_selector"
+        android:layout_below="@+id/title_all"
+        android:textColor="#0c91f7"
+        android:text="+ 添加打印机"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_added"
+        android:layout_below="@id/tv_add_new_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已添加设备"
+        android:paddingLeft="36px"
+        android:paddingTop="5px"
+        android:paddingBottom="5px" />
+
+    <ListView
+        android:background="#fff"
+        android:divider="@null"
+        android:id="@+id/lv_yun_print"
+        android:layout_below="@id/tv_added"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_none_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lv_yun_print"
+        android:text="尚未添加任何打印设备"
+        android:textColor="#292929"
+        android:textSize="28px"
+        android:gravity="center" />
+</com.zhy.autolayout.AutoRelativeLayout>

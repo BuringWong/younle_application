@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/titlebar_all"/>
+    <RadioGroup
+        android:id="@+id/rg_actions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="卡券核销"
+            android:textColor="@drawable/rb_textcolor_selecor"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="自提码核销"
+            android:textColor="@drawable/rb_textcolor_selecor"
+            android:textSize="15sp" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/selected_line">
+        <View
+            android:id="@+id/line_left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="#3f88ce"
+            android:visibility="invisible"/>
+        <View
+            android:id="@+id/line_right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="#3f88ce"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/tab_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d4d4"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--android:background="@drawable/password_find_mobilenum"-->
+        <EditText
+            android:background="@drawable/pay_way_shape"
+            android:inputType="number"
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="24dp"
+            android:hint="输入券号核销"
+            android:paddingLeft="5dp"
+            android:textColorHint="#d8d8d8"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            />
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_below="@id/et_code"
+            android:id="@+id/al_input_hx"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/login_button_selector">
+            <TextView
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_below="@id/et_code"
+                android:id="@+id/btn_voucher_search"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="券号核销"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/vouvher_num_icon"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:id="@+id/devide_line"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/al_input_hx"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D4D4D4"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_below="@id/devide_line"
+            android:id="@+id/al_scan_hx"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/login_button_selector">
+            <TextView
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_below="@id/et_code"
+                android:id="@+id/tv_scan_hx"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="二维码核销"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/scan_hx"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/about_ltw_voucher_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:text="您可在此核销"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/about_wx_voucher"
+                android:layout_toRightOf="@+id/about_ltw_voucher_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:text="微信卡券、"
+                android:textColor="#3366ff"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/about_ltw_voucher"
+                android:layout_toRightOf="@+id/about_wx_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:text="乐推微H5代金券"
+                android:textColor="#3366ff"
+                android:textSize="15sp" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

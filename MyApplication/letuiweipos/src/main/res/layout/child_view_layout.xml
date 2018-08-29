@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46px"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tv_mark_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:paddingTop="3px"
+        android:paddingBottom="3px"
+        android:gravity="center"
+        android:textSize="24px"
+        android:text="标签1" />
+</com.zhy.autolayout.AutoRelativeLayout>

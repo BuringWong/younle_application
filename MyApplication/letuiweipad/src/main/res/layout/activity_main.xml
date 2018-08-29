@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg"
+    >
+    <include layout="@layout/titlebar_all"
+        android:id="@+id/total_title"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_below="@id/total_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/left_bg">
+            <RadioGroup
+                android:id="@+id/rg_main"
+                android:layout_width="112px"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="40px"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <include layout="@layout/guide_line"
+                    android:id="@+id/create_order_line"/>
+                <RadioButton
+                    android:id="@+id/btn_create_order"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_poscolor_selecor"
+                    android:text="点单"
+                    />
+
+                <include layout="@layout/guide_line"
+                    android:id="@+id/find_order_line"/>
+                <RadioButton
+                    android:id="@+id/btn_find_order"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_vouchercolor_selecor"
+                    android:text="未结"
+                    />
+
+                <include layout="@layout/guide_line"
+                    android:id="@+id/finished_order_line"/>
+                <RadioButton
+                    android:id="@+id/btn_finished_order"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_ordercolor_selecor"
+                    android:text="已结" />
+
+                <include layout="@layout/guide_line"
+                    android:id="@+id/voucher_line"
+                    android:visibility="gone"/>
+                <RadioButton
+                    android:id="@+id/btn_voucher"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_aboutcolor_selector"
+                    android:text="核销"
+                    android:visibility="gone"/>
+                <!--称重-->
+                <include layout="@layout/guide_line"
+                    android:id="@+id/scale_line"/>
+                <RadioButton
+                    android:id="@+id/btn_scale"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_scale_selector"
+                    android:text="称重"
+                    android:visibility="gone"
+                    />
+
+                <!--价签-->
+                <include layout="@layout/guide_line"
+                    android:id="@+id/pricetag_line"/>
+                <RadioButton
+                    android:id="@+id/btn_ticket"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_pricetag_selector"
+                    android:text="价签"
+                    android:visibility="gone"
+                    />
+                <!--管理-->
+                <include layout="@layout/guide_line"
+                    android:id="@+id/mamager_line"/>
+                <RadioButton
+                    android:id="@+id/btn_main_manager"
+                    style="@style/BottomTheme"
+                    android:drawableTop="@drawable/rb_aboutcolor_selector"
+                    android:text="管理" />
+                <include layout="@layout/guide_line"/>
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/guide_dic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/hh_mm"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="18:09"
+                    android:textColor="#d9bb81"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/yy_mm_dd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:text="2016/09/16"
+                    android:textSize="12sp"
+                    android:gravity="top|center_horizontal"
+                    android:textColor="#999"/>
+            </LinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"></FrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</RelativeLayout>

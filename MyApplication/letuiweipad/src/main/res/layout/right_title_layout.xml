@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.constraint.ConstraintLayout>-->
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:background="@drawable/right_title_shape">
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24px"
+        android:gravity="center"
+        android:text="外接设备："
+        android:textColor="#666"
+        android:textSize="28px" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24px"
+        android:gravity="center"
+        android:text="删除设备"
+        android:drawableRight="@drawable/to_right"
+        android:drawablePadding="15px"
+        android:textColor="#7C4C21"
+        android:textSize="28px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

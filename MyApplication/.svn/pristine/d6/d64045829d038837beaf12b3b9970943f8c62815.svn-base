@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_pop_edit_goods_num">
+
+    <!-- mulity_back_shadow  ll_shape_timmer_cut_shop_cart-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/mulity_back_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:background="@drawable/ll_shape_timmer_cut_shop_cart">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="请填写数量"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/add_raduce_goods"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_minus"
+                    android:clickable="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/raduce_party_icon"/>
+
+                <EditText
+                    android:id="@+id/et_goods_num"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:maxLength="5"
+                    android:inputType="numberDecimal"
+                    android:text=""/>
+
+                <ImageView
+                    android:id="@+id/btn_add"
+                    android:clickable="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/add_party_icon"/>
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="30dp"
+                android:background="#999"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_return"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:background="@drawable/return_noresult_selector_for_shop_cart"/>
+
+                <!--<View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#999"/>-->
+
+                <TextView
+                    android:id="@+id/tv_determine"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-1px"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textSize="18sp"
+                    android:textColor="#3f88ce"
+                    android:background="@drawable/see_orders_noresult_selector_for_shop_cart"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

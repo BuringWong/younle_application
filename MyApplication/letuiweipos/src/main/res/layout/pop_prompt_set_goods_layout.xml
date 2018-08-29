@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ll_shape_timmer_cut">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:lineSpacingMultiplier="1.2"
+                android:text="请使用电脑访问“乐推微”，在“门店派-高效点单-商品设置”中添加商品 "
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="24px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D8D8D8"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:text="确定"
+            android:textColor="#3F88CE"
+            android:textSize="24px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

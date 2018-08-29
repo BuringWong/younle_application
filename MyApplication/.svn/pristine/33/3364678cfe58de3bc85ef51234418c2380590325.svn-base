@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/un_open"
+        android:layout_marginTop="152px"
+       />
+    <TextView
+        android:id="@+id/tv_open_what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:text="开通以下任一模块才可使用本功能：\n商品运营、智慧门店、自助点单"
+        android:textSize="28px"
+        android:textColor="#333"
+        android:layout_marginTop="42px"/>
+    <TextView
+        android:id="@+id/tv_showfunction"
+        android:layout_width="360px"
+        android:layout_height="70px"
+        android:text="查看功能介绍"
+        android:textColor="#3f88cd"
+        android:textSize="28px"
+        android:gravity="center"
+        android:layout_marginTop="110px"
+        android:background="@drawable/blue_retangle"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

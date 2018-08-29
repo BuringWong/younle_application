@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:maxWidth="200dp"
+    android:minWidth="200dp"
+    android:layout_height="wrap_content"
+    android:maxHeight="150dp"
+    android:orientation="vertical"
+    android:background="@drawable/mark_pop_back_shape">
+
+    <TextView
+        android:id="@+id/tv_mark_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:textSize="28px"
+        android:text="查看标签"/>
+
+    <com.younle.younle624.myapplication.view.MyScrollView
+        android:id="@+id/sl_mark"
+        android:layout_below="@+id/tv_mark_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalScrollbarPosition="right"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp">
+
+        <com.younle.younle624.myapplication.view.FlowLayout
+            android:id="@+id/fl_multi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </com.younle.younle624.myapplication.view.FlowLayout>
+    </com.younle.younle624.myapplication.view.MyScrollView>
+
+    <View
+        android:id="@+id/view_gray_line"
+        android:layout_below="@+id/sl_mark"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1"/>
+
+    <TextView
+        android:id="@+id/tv_click_to_close"
+        android:layout_below="@+id/view_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#3f88ce"
+        android:textSize="24px"
+        android:text="关闭弹层"/>
+</com.zhy.autolayout.AutoLinearLayout>

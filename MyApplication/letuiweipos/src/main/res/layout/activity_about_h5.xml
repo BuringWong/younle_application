@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.younle.younle624.myapplication.activity.manager.orderpager.AboutH5Activity">
+
+    <include layout="@layout/titlebar_all"
+        android:id="@+id/title"/>
+
+    <ImageView
+        android:id="@+id/iv_show_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"/>
+    
+</com.zhy.autolayout.AutoRelativeLayout>

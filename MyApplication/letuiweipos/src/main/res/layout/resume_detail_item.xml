@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_bigname"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房间费用"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:padding="10px"
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="+添加商品"
+            android:textColor="#46aa6e"
+            android:textSize="13sp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <com.younle.younle624.myapplication.view.NoScrollGirdView
+        android:id="@+id/gv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numColumns="1">
+    </com.younle.younle624.myapplication.view.NoScrollGirdView>
+</LinearLayout>

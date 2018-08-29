@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="512px"
+    android:minWidth="512px"
+    android:layout_height="50px"
+    android:minHeight="50px"
+    android:layout_toLeftOf="@id/tv_update_goods"
+    android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/tv_cancel_search"
+        android:layout_alignParentRight="true"
+        android:layout_width="45dp"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:layout_height="match_parent"
+        android:textColor="#3f88cd"
+        android:textSize="14sp"
+        android:text="取消"
+        android:visibility="gone"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_toLeftOf="@id/tv_cancel_search"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/order_search_background2">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入商品首字母或条码编号搜索"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:textSize="24px"
+            android:textColorHint="#999"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></EditText>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_icon" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

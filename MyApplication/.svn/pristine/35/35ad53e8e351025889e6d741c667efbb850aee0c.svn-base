@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff">
+    <include
+        android:id="@+id/title_all"
+        layout="@layout/titlebar_all"/>
+    <ListView
+        android:divider="@null"
+        android:dividerHeight="15px"
+        android:id="@+id/lv_setting"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="20px"
+        android:layout_below="@id/title_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+   <!-- <Button
+        android:onClick="toNext"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:text="测试"/>-->
+    <include layout="@layout/jiazai_layout"/>
+</com.zhy.autolayout.AutoRelativeLayout>

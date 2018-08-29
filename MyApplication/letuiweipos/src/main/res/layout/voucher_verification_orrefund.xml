@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <include layout="@layout/code_scanning_share"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="960px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="280px"
+            android:layout_marginLeft="88px"
+            android:layout_marginRight="65px"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="使用方法：">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_payment_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="180px"
+            android:layout_marginLeft="88px"
+            android:layout_marginRight="65px"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:text="将乐推微卡券上方的二维码置入上方的取景框内"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="105px"
+            android:layout_marginRight="100px"
+            android:textSize="18sp"
+            android:textColor="#0000ff"
+            android:text="关于乐推微“代金券”？"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:minHeight="70dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/unpay_item_selector">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <View
+            android:id="@+id/point"
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:background="@drawable/point"
+            android:layout_marginLeft="15px"
+            />
+        <TextView
+            android:id="@+id/order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="TextView"
+            android:textSize="24px"
+            android:layout_marginLeft="15px"
+            android:textColor="#666"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:id="@+id/good_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24px"
+        android:textColor="#666"
+       />
+
+    <TextView
+        android:id="@+id/order_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24px"
+        android:textColor="#666"
+        />
+
+    <TextView
+        android:id="@+id/create_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24px"
+        android:textColor="#666"
+      />
+</com.zhy.autolayout.AutoLinearLayout>

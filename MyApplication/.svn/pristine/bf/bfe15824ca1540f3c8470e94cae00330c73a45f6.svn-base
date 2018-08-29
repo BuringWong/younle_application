@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <include layout="@layout/titlebar_upgrade"
+        />
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_hx"
+        android:layout_below="@id/title_all"
+        android:layout_marginBottom="20dp"></ListView>
+    <Button
+        android:id="@+id/btn_hx"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/positive_btn_selector"
+        android:text="核销"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

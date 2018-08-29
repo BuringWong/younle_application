@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <include layout="@layout/titlebar_all"/>
+        <TextView
+            android:id="@+id/tv_explain"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:textSize="13sp"
+            android:text="点击可查看详情，向左侧滑动可以删除项目"/>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#ababab"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ListView
+                    android:divider="@null"
+                    android:id="@+id/lv_setting_kinds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#f2f2f2"
+                    >
+                </ListView>
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ababab"/>
+                <ListView
+                    android:divider="@null"
+                    android:id="@+id/lv_setting_detail"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:background="#ececec"
+                    >
+                </ListView>
+            </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <include layout="@layout/jiazai_layout"/>
+</com.zhy.autolayout.AutoRelativeLayout>

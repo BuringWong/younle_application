@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.zhy.autolayout.AutoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_voucher_search"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#fff"
+        >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <ProgressBar
+            android:id="@+id/pb_voucher_search"
+            android:layout_width="53px"
+            android:layout_height="53px"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateDrawable="@drawable/fp_readpic_loading"
+            android:indeterminateOnly="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_voucher_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="5dp"
+            android:text="正在提交所选商品..."
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/pb_voucher_search"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>

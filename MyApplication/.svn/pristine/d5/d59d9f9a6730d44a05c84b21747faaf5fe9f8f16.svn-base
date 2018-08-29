@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.zhy.autolayout.AutoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="#bb000000">
+        <ProgressBar
+            android:layout_width="100px"
+            android:layout_height="100px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本检查中..."
+            android:textColor="#ffffff"
+            android:textSize="25px"/>
+    </com.zhy.autolayout.AutoLinearLayout>

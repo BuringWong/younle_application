@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="selfTextSize">8sp</dimen>
+    <dimen name="managetSize">14sp</dimen>
+    <dimen name="member_margin">25px</dimen>
+    <dimen name="pay_way">16sp</dimen>
+    <dimen name="finished_condition_height">30dp</dimen>
+    <dimen name="inditify_member_height">45px</dimen>
+    <dimen name="self10">20px</dimen>
+    <dimen name="self85">85px</dimen>
+    <dimen name="gsitem_margin">85px</dimen>
+    <dimen name="condition_margin">10px</dimen>
+    <dimen name="printers_height">106px</dimen>
+    <dimen name="bt_printers_height">90px</dimen>
+    <dimen name="weigh_pup_width">606px</dimen>
+    <dimen name="weigh_pup_height">588px</dimen>
+    <dimen name="hx_fail">32px</dimen>
+    <dimen name="pup_corner">18dp</dimen>
+    <dimen name="weigh_pup_margin">86px</dimen>
+    <dimen name="time_picker">300px</dimen>
+    <dimen name="goods_item_height">140px</dimen>
+    <dimen name="goods_item_width">214px</dimen>
+    <dimen name="refund_pup_height">776px</dimen>
+    <dimen name="refund_pup_weight">770px</dimen>
+    <dimen name="refund_btn_height">80px</dimen>
+
+</resources>

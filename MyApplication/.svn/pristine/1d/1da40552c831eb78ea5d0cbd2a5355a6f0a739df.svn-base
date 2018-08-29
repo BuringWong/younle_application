@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.yongle.letuiweipad"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 69
+        versionName "2.1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+    }
+}
+
+greendao {
+    //数据库的schema版本，也可以理解为数据库版本号
+    schemaVersion 4
+    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+    daoPackage 'com.yongle.letuiweipad.dao'
+    //设置DaoMaster、DaoSession、Dao目录
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.sunmi:DS_Lib:1.0.9'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.zhy:autolayout:1.4.5'
+    testCompile 'junit:junit:4.12'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.zhy:okhttputils:2.5.2'
+    compile 'org.xutils:xutils:3.3.34'
+    compile files('libs/gson-2.2.1.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //商米提供的lib库，包含已封装好的接口
+    //    compile 'com.android.support:recyclerview-v7:21.0.+'
+    implementation files('libs/zxing.jar')
+    compile 'org.greenrobot:greendao:3.2.2'
+    implementation files('libs/scale-service-part-lib.jar')
+    implementation files('libs/gprintersdkv1.jar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}
